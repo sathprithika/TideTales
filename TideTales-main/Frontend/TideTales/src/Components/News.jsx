@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { FaChevronLeft } from 'react-icons/fa';
+
 import './News.css'; // Import the CSS file
 
 const News = () => {
@@ -11,7 +11,7 @@ const News = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/news');
+        const response = await axios.get('https://tidetales.onrender.com/news');
         setNews(response.data);
       } catch (error) {
         console.error('Error fetching the news:', error);

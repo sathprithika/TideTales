@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Planktons.css'; // Import your CSS file for styling
-import { FaChevronLeft } from 'react-icons/fa'; // Import the icon
+// import { FaChevronLeft } from 'react-icons/fa'; // Import the icon
 
 const Planktons = () => {
     const [planktons, setPlanktons] = useState([]);
@@ -15,7 +15,7 @@ const Planktons = () => {
 
     const fetchPlanktons = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/getallplanktons'); // Assuming backend API endpoint is at '/getallplanktons'
+            const response = await axios.get('https://tidetales.onrender.com/getallplanktons'); // Assuming backend API endpoint is at '/getallplanktons'
             setPlanktons(response.data);
         } catch (error) {
             console.error('Error fetching planktons:', error);

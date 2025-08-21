@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import axios from 'axios';
-import { FaPlayCircle, FaBook, FaQuestionCircle, FaChevronLeft } from 'react-icons/fa';
+import { FaPlayCircle, FaBook, FaQuestionCircle } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import './Education.css';
 
@@ -15,7 +15,7 @@ const Education = () => {
   useEffect(() => {
     const fetchResources = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/getallresources');
+        const response = await axios.get('https://tidetales.onrender.com/getallresources');
         setResources(response.data);
         setLoading(false);
       } catch (error) {

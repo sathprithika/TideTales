@@ -1,6 +1,6 @@
-import React from 'react';
+
 import { Link, useNavigate } from 'react-router-dom';
-import { FaChevronLeft } from 'react-icons/fa';
+
 import './info.css'; // Ensure this file exists
 
 function Info() {
@@ -39,7 +39,7 @@ function Info() {
             <div className="mb-8">
               <p className="mb-4 text-lg">
                 The dashboard serves as an invaluable repository of knowledge, offering a comprehensive
-                understanding of the intricate ecosystems that constitute our planet's oceans.
+                understanding of the intricate ecosystems that constitute our planets oceans.
               </p>
               <ul className="mb-4 list-disc list-inside text-lg">
                 <li>
@@ -47,7 +47,7 @@ function Info() {
                   diverse tapestry of life.
                 </li>
                 <li>
-                  Planktons form the foundation of marine food webs, while nektons traverse the ocean's
+                  Planktons form the foundation of marine food webs, while nektons traverse the oceans
                   vast expanse.
                 </li>
                 <li>
@@ -65,7 +65,7 @@ function Info() {
                   adaptability.
                 </li>
                 <li>
-                  Enigmatic deep-sea creatures survive in extreme pressures and darkness of the ocean's
+                  Enigmatic deep-sea creatures survive in extreme pressures and darkness of the oceans
                   depths.
                 </li>
               </ul>

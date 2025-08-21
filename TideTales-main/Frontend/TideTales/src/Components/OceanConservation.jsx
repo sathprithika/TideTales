@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './OceanConservation.css';
-import { FaLeaf, FaSearch, FaFish, FaChevronLeft } from 'react-icons/fa';
+import { FaLeaf, FaSearch, FaFish } from 'react-icons/fa';
 
 const OceanConservation = () => {
   const [topics, setTopics] = useState([]);
@@ -13,7 +13,7 @@ const OceanConservation = () => {
   useEffect(() => {
     const fetchTopics = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/getalltips');
+        const response = await axios.get('https://tidetales.onrender.com/getalltips');
         console.log('Topics from API:', response.data);
         setTopics(response.data);
       } catch (error) {

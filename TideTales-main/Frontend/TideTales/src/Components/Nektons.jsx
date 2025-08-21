@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Nektons.css'; // Import your CSS file for styling
-import { FaChevronLeft } from 'react-icons/fa'; // Import the icon
+// import { FaChevronLeft } from 'react-icons/fa'; // Import the icon
 
 const Nektons = () => {
     const [nektons, setNektons] = useState([]);
@@ -16,7 +16,7 @@ const Nektons = () => {
 
     const fetchNektons = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/getallnektons'); // Assuming backend API endpoint is at '/getallnektons'
+            const response = await axios.get('https://tidetales.onrender.com/getallnektons'); // Assuming backend API endpoint is at '/getallnektons'
             setNektons(response.data);
             setFilteredNektons(response.data);
         } catch (error) {

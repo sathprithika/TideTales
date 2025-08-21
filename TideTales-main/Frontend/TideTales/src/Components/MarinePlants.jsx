@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { FaChevronLeft } from 'react-icons/fa'; // Import the icon
+// import { FaChevronLeft } from 'react-icons/fa'; // Import the icon
 import './MarinePlants.css'; // Import your CSS file for styling
 
 const MarinePlants = () => {
@@ -15,7 +15,7 @@ const MarinePlants = () => {
 
     const fetchMarinePlants = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/getallplants'); // Assuming backend API endpoint is at '/getallmarineplants'
+            const response = await axios.get('https://tidetales.onrender.com/getallplants'); // Assuming backend API endpoint is at '/getallmarineplants'
             setMarinePlants(response.data);
         } catch (error) {
             console.error('Error fetching marine plants:', error);

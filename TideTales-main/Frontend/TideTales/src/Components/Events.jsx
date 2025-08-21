@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { FaChevronLeft } from 'react-icons/fa';
 import './Events.css'; // Import your CSS file for styling
 
 const Events = () => {
@@ -15,7 +14,7 @@ const Events = () => {
 
     const fetchEvents = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/getallevents'); // Adjust the URL as per your backend setup
+            const response = await axios.get('https://tidetales.onrender.com/getallevents'); // Adjust the URL as per your backend setup
             setEvents(response.data);
         } catch (error) {
             console.error('Error fetching events:', error);

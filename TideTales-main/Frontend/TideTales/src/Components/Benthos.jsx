@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { FaChevronLeft } from 'react-icons/fa'; // Import the icon
+ // Import the icon
 import './Benthos.css'; // Import your CSS file for styling
 
 const Benthos = () => {
@@ -15,7 +15,7 @@ const Benthos = () => {
 
     const fetchBenthos = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/getallbenthos'); // Assuming backend API endpoint is at '/getallbenthos'
+            const response = await axios.get('https://tidetales.onrender.com/getallbenthos'); // Assuming backend API endpoint is at '/getallbenthos'
             setBenthos(response.data);
         } catch (error) {
             console.error('Error fetching benthos:', error);
@@ -29,7 +29,7 @@ const Benthos = () => {
     const handleSearchSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await axios.get(`http://localhost:4000/searchbenthos?search=${searchTerm}`); // Adjust endpoint as per your backend API
+            const response = await axios.get(`https://tidetales.onrender.com/searchbenthos?search=${searchTerm}`); // Adjust endpoint as per your backend API
             setBenthos(response.data);
         } catch (error) {
             console.error('Error searching benthos:', error);

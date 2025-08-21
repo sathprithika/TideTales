@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+// import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LandingPage from './Components/LandingPage';
 import About from './Components/About';
 import Contact from './Components/Contact';

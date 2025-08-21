@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './Coral.css'; // Import your CSS file for styling
-import { FaChevronLeft } from 'react-icons/fa'; // Import the icon
+ // Import the icon
 
 const Coral = () => {
     const [corals, setCorals] = useState([]);
@@ -15,7 +15,7 @@ const Coral = () => {
 
     const fetchCorals = async () => {
         try {
-            const response = await axios.get('http://localhost:4000/getallcorals'); // Assuming backend API endpoint is at '/getallcorals'
+            const response = await axios.get('https://tidetales.onrender.com/getallcorals'); // Assuming backend API endpoint is at '/getallcorals'
             setCorals(response.data);
         } catch (error) {
             console.error('Error fetching corals:', error);
