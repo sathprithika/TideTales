@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './about.css';
 import { Link } from 'react-router-dom';
 
@@ -22,7 +22,7 @@ export default function About() {
       <section className="content-container">
         <h2 className="text-4xl font-bold text-center mb-8">About Us</h2>
         <p className="mission-statement">
-          The MarineLife Explorer project is dedicated to providing an engaging and educational platform for exploring the diverse world of marine life. Through stunning photography, comprehensive species information, and interactive features, we aim to inspire appreciation and awareness of our oceans' biodiversity and the need for conservation.
+          The MarineLife Explorer project is dedicated to providing an engaging and educational platform for exploring the diverse world of marine life. Through stunning photography, comprehensive species information, and interactive features, we aim to inspire appreciation and awareness of our oceans biodiversity and the need for conservation.
         </p>
         {/* <h3 className="text-2xl font-bold text-center mb-4">Our Team</h3>
         <div className="flex justify-around"> */}

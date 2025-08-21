@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './Contact.css';
 import { Link } from 'react-router-dom';
 
@@ -18,7 +18,7 @@ const Contact = () => {
         </Link>
 
         <h2 className="text-4xl font-bold text-center text-blue-900 mb-4">Contact Us</h2>
-        <p className="text-center text-gray-700 mb-4">We'd love to hear from you! Please fill out the form below to get in touch.</p>
+        <p className="text-center text-gray-700 mb-4">Wed love to hear from you! Please fill out the form below to get in touch.</p>
 
         <form className="mx-auto">
           <div className="mb-4">
